@@ -1,0 +1,16 @@
+.logon-container {
+    max-width: 450px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-home {
+    width: -webkit-fill-available;
+    margin-bottom: 45px;
+}
+
+
+
+

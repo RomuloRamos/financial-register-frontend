@@ -1,0 +1,25 @@
+# Lock files
+package-lock.json
+yarn.lock
+
+# Dependencies
+/node_modules
+
+# Build
+/dist
+
+# Readme
+README.md
+
+# Logs
+npm-debug.log*
+
+# Test Coverage
+coverage/
+
+# Test Report
+report/
+
+# Cypress
+/cypress/screenshots
+/cypress/videos

@@ -1,0 +1,86 @@
+{
+    "name": "financial-register-frontend",
+    "version": "0.1.0",
+    "author": "Rômulo Ramos",
+    "license": "MIT",
+    "dependencies": {
+        "@ant-design/icons": "^4.6.2",
+        "antd": "^4.16.8",
+        "axios": "^0.21.1",
+        "react": "16.13.1",
+        "react-dom": "16.13.1",
+        "react-redux": "^7.2.4",
+        "react-router-dom": "^5.2.0",
+        "redux": "^4.1.0",
+        "redux-saga": "^1.1.3",
+        "typesafe-actions": "^5.1.0",
+        "typescript": "4.0.2"
+    },
+    "devDependencies": {
+        "@testing-library/cypress": "7.0.0",
+        "@testing-library/jest-dom": "5.11.4",
+        "@testing-library/react": "11.0.4",
+        "@types/antd": "^1.0.0",
+        "@types/axios": "0.14.0",
+        "@types/hoist-non-react-statics": "3.3.1",
+        "@types/jest": "26.0.13",
+        "@types/node": "14.10.1",
+        "@types/react": "16.9.49",
+        "@types/react-dom": "16.9.8",
+        "@types/react-redux": "7.1.18",
+        "@types/react-router-dom": "^5.1.8",
+        "@types/redux-saga": "^0.10.5",
+        "@typescript-eslint/eslint-plugin": "4.1.1",
+        "@typescript-eslint/parser": "4.1.1",
+        "eslint-config-airbnb-typescript": "10.0.0",
+        "eslint-config-prettier": "6.11.0",
+        "eslint-plugin-import": "2.22.0",
+        "eslint-plugin-jest": "24.0.1",
+        "eslint-plugin-jsx-a11y": "6.3.1",
+        "eslint-plugin-prettier": "3.1.4",
+        "eslint-plugin-react": "7.20.6",
+        "eslint-plugin-react-hooks": "4.1.2",
+        "husky": "4.3.0",
+        "lint-staged": "10.3.0",
+        "prettier": "2.1.1",
+        "pretty-quick": "3.0.2",
+        "react-scripts": "3.4.3",
+        "start-server-and-test": "1.11.3",
+        "stylelint": "13.7.1",
+        "stylelint-config-recommended": "3.0.0",
+        "stylelint-config-styled-components": "0.1.1",
+        "stylelint-processor-styled-components": "1.10.0"
+    },
+    "scripts": {
+        "start": "set PORT=4000 & react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "lint": "yarn lint:code && yarn lint:css",
+        "lint:code": "eslint --ext .js,.ts,.tsx src",
+        "lint:css": "stylelint src/**/*.ts{,x}"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "lint-staged": {
+        "*.*": [
+            "pretty-quick --staged"
+        ],
+        "src/**/*.style.tsx": [
+            "yarn stylelint"
+        ],
+        "src/**/*.{js,ts,tsx}": [
+            "yarn eslint -c ./src/.eslintrc --max-warnings=0"
+        ]
+    }
+}

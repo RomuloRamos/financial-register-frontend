@@ -1,0 +1,19 @@
+src/**/__tests__/**
+src/**/__snapshots__/**
+build/
+node_modules/
+.eslintrc
+.gitignore
+.prettierignore
+.prettierrc
+.stylelintrc
+package*
+yarn*
+tsconfig.json
+README.md
+
+# Test Coverage
+coverage/
+
+# Test Report
+report/
